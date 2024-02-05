@@ -1,70 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+<head>
+  <!-- 
+ Author : [Ahmed AL-Essam]
+ Project Information: Frontend Mentor Challenge
+ - Completed as part of the Fullstack Bootcamp with RE:Coded
+ - Additional features added: Show design images button, animation
+ Technologies Used : HTML, CSS, Tailwind CSS 
+ -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>
+    Frontend Mentor | Huddle landing page with alternating feature blocks
+  </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+  </style>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!-- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Try It Free
+<body class="w-full flex flex-col z-10 text-lg font-['Open_Sans'] items-stretch">
+  <script>
+    // change this value to set intial state of Design images display
+    var priz = 1;
+  </script>
+  <div id="header"
+    class="bg-[url('./images/bg-hero-mobile.svg')] bg-[#ebfbff] md:bg-[url('./images/bg-hero-desktop.svg')] flex flex-col p-4 bg-contain">
+    <div id="top_bar" class="flex flex-row justify-between">
+      <div id="logo">
+        <img src="./images/logo.svg" alt="Logo" class="w-24 my-3" />
+      </div>
+      <button id="Try"
+        class="drop-shadow-lg hover:drop-shadow-xl my-1 px-5 h-full bg-white rounded-full font-bold text-[10px] hover:text-gray-400">
+        Try It Free
+      </button>
+    </div>
+    <div class="flex flex-col">
+      <div id="left" class="flex flex-col items-center">
+        <h1 class="font-['Poppins'] font-bold text-[23px] p-3 px-4 mt-14 leading-relaxed text-center">
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="text-[15px] mx-5 leading-6 text-center">
+          Huddle re-imagines the way we build communities. You have a voice,
+          but so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button
+          class="bg-[color:hsl(322,100%,66%)] w-2/3 text-white font-semibold text-[12px] p-1 m-7 text-center rounded-full hover:opacity-65">
+          Get Started For Free
+        </button>
+      </div>
+      <div id="right" class="flex flex-col items-center my-5">
+        <img src="./images/illustration-mockups.svg" alt="Mockup" class="w-[90%] m-1" />
+      </div>
+    </div>
+  </div>
+  <div id="content" class="pb-[190px] relative">
+    <div id="grow_togther"
+      class="flex flex-col m-4 my-11 rounded-2xl p-10 pb-8 items-center shadow-gray-200 shadow-lg hover:shadow-lg">
+      <img src="./images/illustration-grow-together.svg" alt="Grow Togther" class="my-3 w-[93%]">
+      <h1 class="font-bold text-[19px] mt-10 font-['Poppins']">Grow Together</h1>
+      <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center my-3 leading-5 mb-0">
+        Generate meaningful discussions with your audience and build a strong,loyal community. Think of the insightful
+        conversations you miss out on with a feedback form.
+      </p>
+    </div>
+    <div id="flowing-conversation"
+      class="flex flex-col m-4 my-12 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg">
+      <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversation" class="my-4 w-[93%]">
+      <h1 class="font-bold text-[19px] mt-14 font-['Poppins']">Flowing Conversations</h1>
+      <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-1 my-3 leading-5">
+        You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading
+        for a more natural flow.
+      </p>
+    </div>
 
-  Build The Community Your Fans Will Love
+    <div id="your-users"
+      class="flex flex-col m-4 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg">
+      <img src="./images/illustration-your-users.svg" alt="Your Users" class="my-1 w-[95%]">
+      <h1 class="font-bold text-[19px] mt-14 font-['Poppins']">Your Users</h1>
+      <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-2 my-3 leading-5 mb-0">
+        It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in
+        to your app, your users can start chatting immediately.
+      </p>
+    </div>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+    <div
+      class="absolute w-[94%] -bottom-20 flex-col m-3  rounded-2xl p-1 bg-white   shadow-2xl shadow-black  flex flex-col items-center">
+      <h1 class="font-bold text-[17px] mt-8 font-['Poppins']">Ready To Build Your Community?</h1>
+      <button
+        class="bg-[color:hsl(322,100%,66%)] w-[60%] text-white font-bold  text-[9px] p-1 m-8 text-center rounded-full mt-6 hover:opacity-65">
+        Get Started For Free
+      </button>
+    </div>
+  </div>
 
-  Get Started For Free
+  <div id="footer" class="bg-[#00252e] text-white pt-32 p-4 flex flex-col">
 
-  Grow Together
-
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
+    <img src="./images/logo.svg" alt="Logo" class="w-40 my-3 invert brightness-0" />
+    <div class="flex ">
+      <ion-icon name="location-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
+      <p class="p-2 px-4 pr-7 text-[15px] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div class="flex ">
+      <ion-icon name="call-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
+      <p class="p-2 px-4 pr-7 text-[15px] leading-6">+1-543-123-4567</p>
+    </div>
+    <div class="flex ">
+      <ion-icon name="mail-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
+      <p class="p-2 px-4 pr-7 text-[15px] leading-6">example@huddle.com</p>
+    </div>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4 pt-14"> About Us</a>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4">What We Do</a>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4">FAQ</a>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4">Career</a>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4">Blog</a>
+    <a href="/" class="py-[6px] hover:underline underline-offset-4">Contact Us</a>
+    <div class="flex flex-col items-center">
+      <div class="icons  m-10">
+        <ion-icon name="logo-facebook"  class="w-9 h-9 hover:fill-[color:hsl(322,100%,66%)]"></ion-icon>
+        <ion-icon name="logo-instagram" class="w-9 h-9 hover:fill-[color:hsl(322,100%,66%)]"></ion-icon>
+        <ion-icon name="logo-instagram" class="w-9 h-9 hover:fill-[color:hsl(322,100%,66%)]"></ion-icon>
+      </div>
+      <div class="copy text-xs">&copy; Copyright 2018 Huddle. All rights reserved.</div>
+    </div>
+  </div>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Ahmed AL-Essam</a>.
     </p>
   </footer>
+  <img src="./design/mobile-design.jpg" alt="design" id="small" style="position: absolute;"
+    class="opacity-65 md:opacity-0" />
+  <img src="./design/desktop-design.jpg" alt="design" id="larg" style="position: absolute;"
+    class="opacity-0 md:opacity-65" />
+  <button id="btn" onclick="togg()"
+    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded fixed top-3 right-3 opacity-0 hover:opacity-65">
+    Show Design
+  </button>
+
+
+  <script>
+
+    var show = 1;
+    function togg() {
+      if (show) {
+        small.classList.add("hidden");
+        larg.classList.add("hidden");
+        show = 0;
+        btn.textContent = "Show Design";
+        btn.classList.add("bg-green-500", "hover:bg-green-700");
+        btn.classList.remove("bg-red-500", "hover:bg-red-700");
+      } else {
+        show = 1;
+        small.classList.remove("hidden");
+        larg.classList.remove("hidden");
+        btn.textContent = "Hide Design";
+        btn.classList.add("bg-red-500", "hover:bg-red-700");
+        btn.classList.remove("bg-green-500", "hover:bg-green-700");
+      }
+    }
+    if (!priz)
+      togg();
+  </script>
 </body>
+
 </html>
