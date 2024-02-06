@@ -2,31 +2,24 @@
 <html lang="en">
 
 <head>
-  <!-- 
- Author : [Ahmed AL-Essam]
- Project Information: Frontend Mentor Challenge
- - Completed as part of the Fullstack Bootcamp with RE:Coded
- - Additional features added: Show design images button, animation
- Technologies Used : HTML, CSS, Tailwind CSS 
- -->
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+Author : [Ahmed AL-Essam]
+Project Information: Frontend Mentor Challenge
+- Completed as part of the Fullstack Bootcamp with RE:Coded
+- Additional features added: Show design images button, animation
+Technologies Used : HTML, CSS, Tailwind CSS
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
-  <title>
-    Frontend Mentor | Huddle landing page with alternating feature blocks
-  </title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> Frontend Mentor | Huddle landing page with alternating feature blocks </title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
   </style>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <!-- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -42,325 +35,133 @@
 
 <body class="w-full flex flex-col z-10 text-lg font-['Open_Sans'] items-stretch">
   <script>
-  // change this value to set intial state of Design images display
+    // change this value to set intial state of Design images display
     var priz = 1;
   </script>
   <!-- NAV BAR or Header start ///////////////////////////////////////////////////// -->
-  <div id="header" class="bg-[url('./images/bg-hero-mobile.svg')] bg-[#ebfbff] flex flex-col p-4 bg-contain 
- md:h-[712px]
- md:bg-[url('./images/bg-hero-desktop.svg')]">
-    <div id="top_bar" class="flex flex-row justify-between
- items-center
- ">
+  <div id="header"
+    class="bg-[url('./images/bg-hero-mobile.svg')] bg-[#ebfbff] flex flex-col p-4 bg-contain md:h-[712px] md:bg-[url('./images/bg-hero-desktop.svg')]">
+    <div id="top_bar" class="flex flex-row justify-between items-center">
       <div id="logo">
-        <img src="./images/logo.svg" alt="Logo" class="w-24 my-3 
- 
- md:m-10 
- md:mx-16 
- md:w-[198px]" />
+        <img src="./images/logo.svg" alt="Logo" class="w-24 my-3 md:m-10 md:mx-16 md:w-[198px]">
       </div>
-      <button id="Try" class="drop-shadow-lg hover:drop-shadow-xl my-1 px-5 h-full bg-white rounded-full font-bold text-[10px] hover:text-gray-400
-
- md:m-[30px] 
- md:px-[60px] 
- md:mx-[66px] 
- md:text-[14px] 
- md:p-[10px]
- md:h-auto
- ">
-        Try It Free
-      </button>
+      <button id="Try"
+        class="drop-shadow-lg hover:drop-shadow-xl my-1 px-5 h-full bg-white rounded-full font-bold text-[10px] hover:text-gray-400 md:m-[30px] md:px-[60px] md:mx-[66px] md:text-[14px] md:p-[10px] md:h-auto">Try
+        It Free</button>
     </div>
-
     <!-- Build The Community Section start ///////////////////////////////////////////////////// -->
-
-    <div class="flex flex-col
-    md:flex-row 
-    ">
-        <!--left of Build The Community Section start ///////////////////////////////////////////////////// -->
-      <div id="left" class="flex flex-col items-center 
- 
- md:basis-[45%] 
- md:items-start">
-        <h1 class="font-['Poppins'] font-bold text-[23px] p-3 px-4 mt-14 leading-relaxed text-center
-
- md:text-[39px] 
- md:text-left 
- md:mt-[114px] 
- md:mx-12
- md:leading-normal 
- ">
-          Build The Community Your Fans Will Love
-        </h1>
-        <p class="text-[15px] mx-5 leading-6 text-center
- 
- md:text-lg 
- md:mt-[15px] 
- md:ml-[63px]
- md:mx-[40px]
- md:text-left
- ">
-          Huddle re-imagines the way we build communities. You have a voice,
-          but so does your audience. Create connections with your users as you
-          engage in genuine discussion.
+    <div class="flex flex-col md:flex-row">
+      <!--left of Build The Community Section start ///////////////////////////////////////////////////// -->
+      <div id="left" class="flex flex-col items-center md:basis-[45%] md:items-start">
+        <h1
+          class="font-['Poppins'] font-bold text-[23px] p-3 px-4 mt-14 leading-relaxed text-center md:text-[39px] md:text-left md:mt-[114px] md:mx-12 md:leading-normal">
+          Build The Community Your Fans Will Love</h1>
+        <p
+          class="text-[15px] mx-5 leading-6 text-center md:text-lg md:mt-[15px] md:ml-[63px] md:mx-[40px] md:text-left">
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+          connections with your users as you engage in genuine discussion.
         </p>
-        <button class="bg-[color:hsl(322,100%,66%)] w-2/3 text-white font-semibold text-[12px] p-1 m-7 text-center rounded-full hover:opacity-65
- 
- md:p-[14px]
- md:w-[275px]
- md:ml-16
- md:text-[14px]
- md:m-[29px]
- ">
-          Get Started For Free
-        </button>
+        <button
+          class="bg-[color:hsl(322,100%,66%)] w-2/3 text-white font-semibold text-[12px] p-1 m-7 text-center rounded-full hover:opacity-65 md:p-[14px] md:w-[275px] md:ml-16 md:text-[14px] md:m-[29px]">Get
+          Started For Free</button>
       </div>
-          <!--left of Build The Community Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-
-          <!--Right of Build The Community Section start ///////////////////////////////////////////////////// -->
-      <div id="right" class="flex flex-col items-center my-5 
-      
- md:basis-[51%]
- md:m-0">
-        <img src="./images/illustration-mockups.svg" alt="Mockup" class="w-[90%] m-1
- md:w-[96%]
- md:mt-8
- " />
+      <!--left of Build The Community Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <!--Right of Build The Community Section start ///////////////////////////////////////////////////// -->
+      <div id="right" class="flex flex-col items-center my-5 md:basis-[51%] md:m-0">
+        <img src="./images/illustration-mockups.svg" alt="Mockup" class="w-[90%] m-1 md:w-[96%] md:mt-8">
       </div>
-          <!--left of Build The Community Section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+      <!--left of Build The Community Section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
     </div>
-      <!-- Build The Community Section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <!-- Build The Community Section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
   </div>
   <!-- NAV BAR or Header end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
-
-
   <!-- content Section start ///////////////////////////////////////////////////// -->
-
-  <div id="content" class="pb-[190px] relative
- 
- md:pt-14
- md:m-[100px]
- ">
-
-      <!-- grow_togther Section start ///////////////////////////////////////////////////// -->
-    <div id="grow_togther" class="flex flex-col m-4 my-11 rounded-2xl p-10 pb-8 items-center shadow-gray-200 shadow-lg hover:shadow-lg
- 
- md:flex-row-reverse
- md:m-0
- md:p-9
- ">
-      <div class="flex flex-col items-end
-
- md:bases-[50%]
- md:flex-1">
-        <img src="./images/illustration-grow-together.svg" alt="Grow Togther" class="my-3 w-[93%]
- 
- md:w-[400px]
- md:my-[18px]
- ">
+  <div id="content" class="pb-[190px] relative md:pt-14 md:m-[100px]">
+    <!-- grow_togther Section start ///////////////////////////////////////////////////// -->
+    <div id="grow_togther"
+      class="flex flex-col m-4 my-11 rounded-2xl p-10 pb-8 items-center shadow-gray-200 shadow-lg hover:shadow-lg md:flex-row-reverse md:m-0 md:p-9">
+      <div class="flex flex-col items-end md:bases-[50%] md:flex-1">
+        <img src="./images/illustration-grow-together.svg" alt="Grow Togther"
+          class="my-3 w-[93%] md:w-[400px] md:my-[18px]">
       </div>
-
-      <div class="flex flex-col items-center
-      
- md:items-start
- md:justify-between
- md:bases-[50%]
- md:flex-1
- md:pl-[80px]
- md:h-[120px]
- ">
-        <h1 class="font-bold text-[19px] mt-10 font-['Poppins']
-
- md:m-1
- md:text-[28px]
- ">Grow Together</h1>
-        <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center my-3 leading-5 mb-0
-
- md:text-lg
- md:text-left
- md:mr-[10px] 
- ">
+      <div
+        class="flex flex-col items-center md:items-start md:justify-between md:bases-[50%] md:flex-1 md:pl-[80px] md:h-[120px]">
+        <h1 class="font-bold text-[19px] mt-10 font-['Poppins'] md:m-1 md:text-[28px]">Grow Together</h1>
+        <p
+          class="text-[color:hsl(208,11%,55%)] text-[13px] text-center my-3 leading-5 mb-0 md:text-lg md:text-left md:mr-[10px]">
           Generate meaningful discussions with your audience and build a strong,loyal community. Think of the insightful
           conversations you miss out on with a feedback form.
         </p>
       </div>
-
     </div>
-    <div id="flowing-conversation" class="flex flex-col m-4 my-12 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg
- border-2
- 
- md:flex-row
- md:m-0
- md:p-9
- md:my-10
- ">
-      <div class="
- flex flex-col 
- items-end
- md:items-start 
- md:flex-1">
-        <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversation" class="my-4 w-[93%]
- 
- md:w-[400px]
- md:my-[40px]
- md:mx-[90px]
- ">
+    <div id="flowing-conversation"
+      class="flex flex-col m-4 my-12 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg border-2 md:flex-row md:m-0 md:p-9 md:my-10">
+      <div class="flex flex-col items-end md:items-start md:flex-1">
+        <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversation"
+          class="my-4 w-[93%] md:w-[400px] md:my-[40px] md:mx-[90px]">
       </div>
-
-      <div class="flex flex-col items-center
-
- md:items-start 
- md:justify-between
- md:flex-1
- md:pl-[80px]
- md:ml-[91px]
-
- 
- ">
-        <h1 class="font-bold text-[19px] mt-14 
- font-['Poppins'] 
- md:text-[28px]
- md:mt-7
- ">Flowing Conversations</h1>
-        <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-1 my-3 leading-5
- 
- md:text-lg
- md:text-left
- md:mx-0
- md:m-4
- md:pt-[8px]
- md:ml-0 
- ">
+      <div class="flex flex-col items-center md:items-start md:justify-between md:flex-1 md:pl-[80px] md:ml-[91px]">
+        <h1 class="font-bold text-[19px] mt-14 font-['Poppins'] md:text-[28px] md:mt-7">Flowing Conversations</h1>
+        <p
+          class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-1 my-3 leading-5 md:text-lg md:text-left md:mx-0 md:m-4 md:pt-[8px] md:ml-0">
           You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading
           for a more natural flow.
         </p>
       </div>
     </div>
-
-    <div id="your-users" class="flex flex-col m-4 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg
-       
- md:flex-row-reverse
- md:m-0
- md:p-6
- md:mb-[60px]
- 
- ">
-      <div class="
- flex flex-col 
- items-end
- md:items-start 
- md:flex-1">
-
-        <img src="./images/illustration-your-users.svg" alt="Your Users" class="my-1 w-[95%] 
- 
- md:w-[400px]
- md:my-[40px]
- md:mx-[90px] 
- ">
+    <div id="your-users"
+      class="flex flex-col m-4 rounded-2xl p-10 items-center shadow-gray-200 shadow-lg hover:shadow-lg md:flex-row-reverse md:m-0 md:p-6 md:mb-[60px]">
+      <div class="flex flex-col items-end md:items-start md:flex-1">
+        <img src="./images/illustration-your-users.svg" alt="Your Users"
+          class="my-1 w-[95%] md:w-[400px] md:my-[40px] md:mx-[90px]">
       </div>
-      <div class="flex flex-col items-center
-
-      md:items-start 
-      md:justify-between
-      md:flex-1
-      md:pl-[95px]
-      md:mr-[80px]
-     
-      
-      ">
-        <h1 class="font-bold text-[19px] mt-14 font-['Poppins']
-      
-      md:text-[28px]
-      md:mt-7">Your Users</h1>
-        <p class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-2 my-3 leading-5 mb-0
- 
-      md:text-lg
-      md:text-left
-      md:mx-3
-      md:m-3
-      md:pt-[6px]
-      md:ml-1 
-      ">
+      <div class="flex flex-col items-center md:items-start md:justify-between md:flex-1 md:pl-[95px] md:mr-[80px]">
+        <h1 class="font-bold text-[19px] mt-14 font-['Poppins'] md:text-[28px] md:mt-7">Your Users</h1>
+        <p
+          class="text-[color:hsl(208,11%,55%)] text-[13px] text-center m-2 my-3 leading-5 mb-0 md:text-lg md:text-left md:mx-3 md:m-3 md:pt-[6px] md:ml-1">
           It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed
-          in
-          to your app, your users can start chatting immediately.
+          in to your app, your users can start chatting immediately.
         </p>
       </div>
     </div>
-
-    <div class="absolute w-[94%] -bottom-20 flex-col m-3 rounded-2xl p-1 bg-white shadow-2xl shadow-black flex flex-col items-center
-      
-      md:w-[64%] 
-      md:ml-[18%]
-      md:-bottom-52
-      ">
-      <h1 class="font-bold text-[17px] mt-8 font-['Poppins']
-      
-      md:text-[31px]
-      md:mt-24
-      md:mb-[10px]
-      ">Ready To Build Your Community?</h1>
-      <button class="bg-[color:hsl(322,100%,66%)] w-[60%] text-white font-bold text-[9px] p-1 m-8 text-center rounded-full mt-6 hover:opacity-65
-        
-        md:w-[50%]
-        md:text-[20px]
-        md:py-[20px]
-        md:mb-[60px]
-        ">
-        Get Started For Free
-      </button>
+    <div
+      class="absolute w-[94%] -bottom-20 flex-col m-3 rounded-2xl p-1 bg-white shadow-2xl shadow-black flex flex-col items-center md:w-[64%] md:ml-[18%] md:-bottom-52">
+      <h1 class="font-bold text-[17px] mt-8 font-['Poppins'] md:text-[31px] md:mt-24 md:mb-[10px]">Ready To Build Your
+        Community?</h1>
+      <button
+        class="bg-[color:hsl(322,100%,66%)] w-[60%] text-white font-bold text-[9px] p-1 m-8 text-center rounded-full mt-6 hover:opacity-65 md:w-[50%] md:text-[20px] md:py-[20px] md:mb-[60px]">Get
+        Started For Free</button>
     </div>
   </div>
-
-  <div id="footer" class="bg-[#00252e] text-white pt-32 p-4 flex flex-col
-  
-  md:p-[120px]
-  md:pt-[170px]
-  md:pb-[0px]
-  ">
-
-    <img src="./images/logo.svg" alt="Logo" class="w-40 my-3 invert brightness-0
-    
-    md:w-[235px]
-    " />
-    <div class="flex justify-between flex-col
-    md:flex-row
-    ">
+  <div id="footer" class="bg-[#00252e] text-white pt-32 p-4 flex flex-col md:p-[120px] md:pt-[170px] md:pb-[0px]">
+    <img src="./images/logo.svg" alt="Logo" class="w-40 my-3 invert brightness-0 md:w-[235px]">
+    <div class="flex justify-between flex-col md:flex-row">
       <div class="basis-[38%]">
-        <div class="flex ">
+        <div class="flex">
           <ion-icon name="location-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
           <p class="p-2 px-4 pr-7 text-[15px] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
         </div>
-        <div class="flex ">
+        <div class="flex">
           <ion-icon name="call-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
           <p class="p-2 px-4 pr-7 text-[15px] leading-6">+1-543-123-4567</p>
         </div>
-        <div class="flex ">
+        <div class="flex">
           <ion-icon name="mail-outline" class="w-[22px] h-[22px] pt-3 flex-none"></ion-icon>
           <p class="p-2 px-4 pr-7 text-[15px] leading-6">example@huddle.com</p>
         </div>
       </div>
-      <div class="flex flex-col  basis-[10%] ">
-        <a href="/" class="py-[6px] hover:underline underline-offset-4 pt-14
-        
-        md:pt-0
-        "> About Us</a>
+      <div class="flex flex-col basis-[10%]">
+        <a href="/" class="py-[6px] hover:underline underline-offset-4 pt-14 md:pt-0"> About Us</a>
         <a href="/" class="py-[6px] hover:underline underline-offset-4">What We Do</a>
         <a href="/" class="py-[6px] hover:underline underline-offset-4">FAQ</a>
       </div>
-      <div class="flex flex-col basis-[10%]" >
-        <a href="/" class="py-[6px] hover:underline underline-offset-4
-        
-        md:pt-0
-        ">Career</a>
+      <div class="flex flex-col basis-[10%]">
+        <a href="/" class="py-[6px] hover:underline underline-offset-4 md:pt-0">Career</a>
         <a href="/" class="py-[6px] hover:underline underline-offset-4">Blog</a>
         <a href="/" class="py-[6px] hover:underline underline-offset-4">Contact Us</a>
       </div>
-      <div class="flex flex-col items-center hidden md:flex basis-[25%]
-      md:h-[250px]
-      md:justify-around
-      ">
+      <div class="flex flex-col items-center hidden md:flex basis-[25%] md:h-[250px] md:justify-around">
         <div class="icons -m-10">
           <ion-icon name="logo-facebook" class="w-9 h-9 hover:fill-[color:hsl(322,100%,66%)]"></ion-icon>
           <ion-icon name="logo-instagram" class="w-9 h-9 hover:fill-[color:hsl(322,100%,66%)]"></ion-icon>
@@ -377,27 +178,20 @@
       </div>
       <div class="copy text-xs">&copy; Copyright 2018 Huddle. All rights reserved.</div>
     </div>
-
   </div>
   <footer>
-    <p class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-        href="#">Ahmed AL-Essam</a>.
+    <p class="attribution">Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>. Coded by <a href="#">Ahmed AL-Essam</a>.
     </p>
   </footer>
   <img src="./design/mobile-design.jpg" alt="design" id="small" style="position: absolute;"
-    class="opacity-65 md:opacity-0" />
+    class="opacity-65 md:opacity-0">
   <img src="./design/desktop-design.jpg" alt="design" id="larg" style="position: absolute;"
-    class="opacity-0 md:opacity-65" />
+    class="opacity-0 md:opacity-65">
   <button id="btn" onclick="togg()"
-    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded fixed top-3 right-3 opacity-0 hover:opacity-65">
-    Show Design
-  </button>
-
-
+    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded fixed top-3 right-3 opacity-0 hover:opacity-65">Show
+    Design</button>
   <script>
-
     var show = 1;
     function togg() {
       if (show) {
